@@ -1,0 +1,222 @@
+/* * {border: 1px solid hotpink;} */
+
+/* Custom Properties */
+:root {
+  --color-primary-1:#512051;
+  --color-primary-2:#EF9546;
+  --color-primary-3:#EE69A4;
+  --color-primary-4:#927B91;
+
+  --color-neutral-1:#FFFFFF;
+
+  --font-family-1:"League Spartan", sans-serif;
+
+  --font-size-1:1.0625rem;
+  --font-size-2:1.1875rem;
+  --font-size-3:2.5rem;
+  --font-size-4:3.5rem;
+
+  --line-height-1a:1rem;
+  --line-height-1b:1.375rem;
+  --line-height-2:1.5625rem;
+  --line-height-3:2rem;
+  --line-height-4:3rem;
+
+  --font-weight-1:400;
+  --font-weight-2:500;
+  --font-weight-3:700;
+
+  --max-width-mobile:550px;
+  --max-width-desktop:1110px;
+}
+
+/* Universal Styling */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0 
+}
+
+/* General Styling 1x Elements */
+
+html {
+  height: 100%;
+  display: flex;
+
+}
+
+body {
+  background-color: var();
+  color: var(--color-neutral-1);
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-2);
+  line-height: var(--line-height-1b);
+  text-align: center;
+
+  height: 100%;
+  margin-inline: auto; 
+}
+
+main {
+  margin: 5.125rem 1.5rem 0 1.5rem;
+  max-width: var(--max-width-mobile);
+}
+
+h1 {
+  color: var(--color-primary-1);
+  font-family: var();
+  font-size: var(--font-size-3);
+  line-height: var(--line-height-3);
+  font-weight: var(--font-weight-3); 
+}
+
+/* General Styling Generic Elements */
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Component Styling */
+
+.review-card {
+  background-color: var(--color-primary-1);
+  text-align: left;
+  padding: 2.5rem 2rem 2.25rem 2rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+}
+
+.star-container {
+  display: flex;
+  gap: 8.45px;
+  max-width: 7.3125rem;
+  margin-bottom: 1rem;
+}
+
+
+/* Utility Classes */
+
+.margin-bottom-16 {
+  margin-bottom: 1rem;
+}
+.margin-bottom-24 {
+  margin-bottom: 1.5rem;
+}
+.margin-bottom-56 {
+  margin-bottom: 3.5rem;
+}
+.margin-bottom-48 {
+  margin-bottom: 3rem;
+}
+.margin-right-24 {
+  margin-right: 1.5rem;
+}
+
+.text-style-1 {
+  color: var(--color-primary-4);
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-2);
+}
+.text-style-2 {
+  color: var(--color-primary-1);
+  font-weight: var(--font-weight-3);
+}
+.text-style-3 {
+  color: var(--color-primary-3);
+  font-weight: var(--font-weight-1);
+}
+.text-style-4 {
+  font-weight: var(--font-weight-3);
+}
+
+.opacity-1 {
+  opacity: .8;
+}
+
+.image-style {
+  max-width: 2.5rem;
+  border-radius: 50%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-row {
+  display: flex;
+}
+
+@media (min-width: 1000px) {
+  main {
+    text-align: left;
+    max-width: var(--max-width-desktop);
+  }
+
+  h1 {
+    font-size: var(--font-size-4);
+    line-height: var(--line-height-4);
+  }
+
+  .ratings-section {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: start;
+  }
+
+  .space-between {
+    justify-content: space-between;
+  }
+
+  .flex-row-d {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .max-width-d {
+    max-width: 445px;
+  }
+
+  .margin-bottom-0-d {
+    margin-bottom: 0;
+  }
+  .margin-bottom-48-d {
+    margin-bottom: 3rem;
+  }
+  .margin-right-32-d {
+    margin-right: 2rem;
+  }
+
+  .move-left-48-d {
+    position: relative;
+    right: 3rem;
+  }
+  .move-left-96-d {
+    position: relative;
+    right: 6rem;
+  }
+  .move-left-144-d {
+    position: relative;
+    right: 9rem;
+  }
+  .move-down-16-d {
+    position: relative;
+    top: 1rem;
+  }
+  .move-down-32-d {
+    position: relative;
+    top: 2rem;
+  }
+  
+
+}
+
+.attribution {
+  display:inline-block;
+  color:white;
+  background-color: var(--color-primary-1);
+}
+
